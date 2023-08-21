@@ -1,0 +1,73 @@
+.modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -100%; /* Começa fora da tela à direita */
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transition: right 0.3s ease;
+}
+
+.modal-content {
+  background-color: #000;
+  width: 100%;
+  margin: 10% auto;
+  box-shadow: 0 4px 8px #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+}
+
+.logo_menu {
+  width: 171px;
+  height: 32.8px;
+}
+
+.alinhar_logoModal {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.btn_modal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linkBtn {
+  width: 100%;
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 17px;
+  width: 100%;
+  height: 57px;
+  background-color: #000;
+  color: #a8a8b3;
+  font-family: "Manrope";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-left: none;
+  border-right: none;
+  border-top: 1px #a8a8b3 solid;
+  border-bottom: 1px #a8a8b3 solid;
+  margin-top: -1px;
+  cursor: pointer;
+}

@@ -1,0 +1,106 @@
+.navbar {
+  width: 100%;
+  height: 43.1px;
+  margin-top: 50px; /* margin ao topo */
+  margin-bottom: 40px; /* margin ao fundo */
+  display: flex;
+  justify-content: space-evenly; /* alinha horizontalmente os itens, deixando-os separados igualmente. (tambem com as laterais) */
+  align-items: center;
+  background-color: transparent;
+  color: var(--white);
+}
+
+.navbar__logo,
+.navbar__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__items-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* espaçamento entre os filhos de 2rem = 2 x 16px = 32px -> so pode usar gap quando tiver flex */
+}
+
+.item-link {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: capitalize; /* transforma todo texto colocado dentro do item-link em capitalize -> a primeira letra será sempre maiuscula */
+}
+
+.item-link:hover,
+.takemycoffe-btn:hover {
+  color: var(--gray-300);
+}
+
+.takemycoffe-btn {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--white);
+  border-radius: 6px; /* arredonda as bordas */
+  border: 1px solid var(--purple-500); /* tamanho da borda solida com a cor roxa */
+  padding: 0.6875rem 2.375rem; /* o espaçamento entre a "caixa" e os filhos  -> PRIMEIRA MEDIDA = EM CIMA E EMBAIXO ; SEGUNDA MEDIDA: LATERAIS */
+  text-transform: uppercase;
+}
+
+.logo_mobile {
+  display: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.abrir_menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    height: 95px;
+  }
+  .navbar__items-list {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo_mobile {
+    display: block;
+  }
+
+  .navbar__items-list {
+    flex-direction: column;
+  }
+
+  .navbar {
+    height: auto; /* Permitir que a altura se ajuste conforme o conteúdo */
+    flex-direction: column; /* Alinhar os itens verticalmente */
+    align-items: center; /* Centralizar na horizontal */
+  }
+
+  .linha {
+    margin-top: 20px; /* Adicionar margem entre a linha e os outros elementos */
+  }
+
+  .takemycoffe-btn {
+    margin-top: 20px; /* Adicionar margem acima do botão */
+  }
+
+  .abrir_menu {
+    display: block;
+    width: 24px;
+    height: 8px;
+    cursor: pointer;
+  }
+  .navbar__logo {
+    width: 85%;
+    justify-content: space-between;
+  }
+}

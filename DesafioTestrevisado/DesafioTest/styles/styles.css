@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+@import url("./styles/nav.css");
+@import url("./styles/main.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --purple-500: #8257e5;
+  --gray-300: #dfdfdf;
+  --white: #fff;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  margin: 0; /* Remova as margens para ocupar toda a tela */
+  background-color: #000;
+  background-image: radial-gradient(
+      at 2% 99%,
+      hsla(258, 89%, 71%, 0.3) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 98% 10%, hsla(258, 100%, 71%, 0.31) 0px, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: auto 100%; /* Ajusta o tamanho horizontalmente e mantém a altura */
+  background-position: left bottom, right top; /* Posições dos gradientes */
+}
